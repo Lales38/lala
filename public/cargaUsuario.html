@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga de Usuarios</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cargar de Usuarios a la base de datos</h1>
+        <form action="/api/usuarios" method="post" enctype="multipart/form-data">
+            <input type="text" name="nombre" placeholder="Nombre" class="form-control mb-3">
+            <input type="text" name="apellido" placeholder="Apellido" class="form-control mb-3">
+            <input type="email" name="mail" placeholder="lala@lala.com" class="form-control mb-3">
+            <input type="text" name="password" placeholder="Password" class="form-control mb-3">
+            <select name="fk_rol" id="" class="form-select">
+                <option value="1">Liquidador</option>
+                <option value="2">Responsble</option>
+                <option value="3">Empleado</option>
+            </select>
+           <!--  <div class="mb-3">
+                <label for="" class="form-label">
+                    Imagen
+                </label>
+              
+                <input type="file" name="imagen" id="imagen" accept="image/png,image/jpeg" class="form-control" >
+            </div> -->
+            <input type="submit" value="Crear usuario" class="btn btn-primary">
+        </form>
+    </div>
+    
+</body>
+</html>

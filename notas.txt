@@ -1,0 +1,25 @@
+Proyecto liquidación sueldo cantina.
+
+Base de datos "DB_lala"
+Tablas:
+    *Roles,
+    *Empleados,
+    *Usuarios,
+    *Categorias,
+    *Antiguedad.
+
+Inicio proyecto con node_express
+
+Arquitectura
+    Index.js,
+    Config,
+    Controllers,
+    public,
+    routes,
+    .gitingnore.
+
+Desarrollo:
+    db.js,
+    index.js,
+    rutaUsuario
+
