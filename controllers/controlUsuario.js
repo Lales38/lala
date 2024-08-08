@@ -3,7 +3,7 @@ import pool from "../config/db.js";
 //post('/api/usuario')
 export const crearUsuarioPost = async (req, res) => {
   const newUsuario = req.body; //toma la info de texto del formulario front
-  newProducto.imagen = req.file.fieldname; //toma la info archivo
+  //newUsuario.imagen = req.file.fieldname; //toma la info archivo
   console.log("el usuario cargado es :", req.body);
 
   try {

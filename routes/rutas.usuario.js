@@ -1,5 +1,5 @@
 import express from "express";
-const routerUsu = express.Router();
+const router = express.Router();
 import multer from "multer";
 import { crearUsuarioPost } from "../controllers/controlUsuario.js";
 
