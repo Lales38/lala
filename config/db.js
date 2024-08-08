@@ -14,10 +14,10 @@ pool
   .getConnection()
   .then((connection) => {
     pool.releaseConnection(connection);
-    console.log("¡¡¡ Connection sucessfully !!!!");
+    console.log("¡¡¡ Connection sucessfully :) !!!!");
   })
-  .catch((err) => {
-    console.error("¡¡¡Ups, connection was failed !!!");
-  });
+  .catch(err => 
+    console.error("¡¡¡Ups, connection was failed !!!", err)
+  );
 
 export default pool;

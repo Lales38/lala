@@ -1,4 +1,5 @@
 import express from "express";
+import pool from "./config/db.js"
 import routerUsu from "./routes/rutas.usuario.js";
 
 const app = express();
