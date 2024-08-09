@@ -9,7 +9,7 @@ export const crearUsuarioPost = async (req, res) => {
   try {
     const connection = await pool.getConnection();
     const [result] = await connection.query("INSERT INTO usuarios SET ?", [
-      newUsuario
+      newUsuario,
     ]);
     console.log("El resultado es: ", result);
     connection.release();
@@ -26,4 +26,4 @@ export const crearUsuarioPost = async (req, res) => {
       );
   }
 };
-//export default crearUsuarioPost;
+
